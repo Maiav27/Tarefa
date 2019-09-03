@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <table>
+    <tr>
+      <td>
+         <div>
+              <label> Tarefa </label>
+              <input type="text" name="Tarefa" id="tarefa"> 
+              <input type="submit" value="Adicionar" onclick="adicionar()">
+         </div>
+      </td>
+      <td>
+          <table id="">
+              <thead>
+                  <tr>
+                      <th>Tarefas</th>
+                  </tr>
+              </thead>
+          </table>
+      </td>
+  </tr>
+   </table>
+    <script > 
+    function adicionar(){
+    var tarefas = window.document.getElementById('tarefa');
+    var tTarefas = [];
+     tTarefas.push(tarefas.value);
+      var res = window.document.getElementById('div#res');
+         res.innerHTML = `<p>${tTarefas}</p>`;
+     }
+     function ler(){
+
+     }
+    </script>  
+         
+ 
+</body>
+</html>
